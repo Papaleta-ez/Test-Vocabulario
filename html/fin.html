@@ -3,43 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fin del Test</title>
+  <title>Test Finalizado</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="corpus">
+  <main class="contenedor">
 
-    <div class="header">
-      <h1>Test de Razonamiento</h1>
-      <h2>Fin del test</h2>
-    </div>
+    <section class="tarjeta final">
 
-    <div class="body">
-
-      <h3>Resultados del estudiante</h3>
-
-      <div class="info-test">
-        <p><strong>Estudiante:</strong> <span id="finNombre"></span></p>
-        <p><strong>Tipo de test:</strong> <span id="finTipoTest"></span></p>
-        <p><strong>Fecha:</strong> <span id="finFecha"></span></p>
-        <p><strong>Hora de inicio:</strong> <span id="finHoraInicio"></span></p>
-        <p><strong>Hora de finalización:</strong> <span id="finHoraFin"></span></p>
+      <div class="encabezado">
+        <img class="logo-uam" src="https://logosnicas.com/wp-content/uploads/2022/08/universidad_americana_2020.png" alt="Logo UAM">
+        <h1>Test de Razonamiento</h1>
+        <p>Universidad Americana</p>
       </div>
 
-      <p><strong>Aciertos:</strong> <span id="finAciertos"></span></p>
-      <p><strong>Desaciertos:</strong> <span id="finDesaciertos"></span></p>
-      <p><strong>Total de preguntas:</strong> <span id="finTotal"></span></p>
+      <div class="contenido mensaje-final">
+        <h2>Test finalizado</h2>
 
-      <h3 id="mensajeFinal"></h3>
+        <p>
+          Su intento ha sido finalizado correctamente.
+        </p>
 
-    </div>
+        <p>
+          Gracias por completar la evaluación.
+        </p>
+      </div>
 
-    <div class="footer">
-      <button onclick="reiniciarTest()">Volver al inicio</button>
-    </div>
+      <div class="acciones">
+        <button onclick="alert('Test finalizado correctamente.')">Finalizar intento</button>
+      </div>
 
-  </div>
+    </section>
+
+  </main>
 
   <script src="script.js"></script>
 </body>

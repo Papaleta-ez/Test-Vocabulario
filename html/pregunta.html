@@ -8,57 +8,62 @@
 </head>
 <body>
 
-  <div class="corpus">
+  <main class="contenedor">
 
-    <div class="header">
-      <h1>Test de Razonamiento</h1>
-      <h2>Pregunta</h2>
-    </div>
+    <section class="tarjeta">
 
-    <div class="body">
-
-      <div class="info-test">
-        <p><strong>Estudiante:</strong> <span id="nombreCompleto"></span></p>
-        <p><strong>Fecha:</strong> <span id="fechaTest"></span></p>
-        <p><strong>Hora de inicio:</strong> <span id="horaInicio"></span></p>
-        <p><strong>Tiempo restante:</strong> <span id="temporizador" class="temporizador">00:00</span></p>
+      <div class="encabezado">
+        <img class="logo-uam" src="https://logosnicas.com/wp-content/uploads/2022/08/universidad_americana_2020.png" alt="Logo UAM">
+        <h1>Test de Razonamiento</h1>
+        <p>Universidad Americana</p>
       </div>
 
-      <h3 id="numeroPregunta">Pregunta 1</h3>
+      <div class="contenido">
 
-      <p id="textoPregunta">
-        Aquí aparecerá la pregunta del test.
-      </p>
+        <div class="panel-info">
+          <p><strong>Estudiante:</strong> <span id="nombreCompleto"></span></p>
+          <p><strong>Fecha:</strong> <span id="fechaTest"></span></p>
+          <p><strong>Hora de inicio:</strong> <span id="horaInicio"></span></p>
+          <p><strong>Tiempo restante:</strong> <span id="temporizador" class="temporizador">00:00</span></p>
+        </div>
 
-      <form id="formOpciones">
-        <label class="opcion">
-          <input type="radio" name="respuesta" value="A">
-          <span id="opcionA">Opción A</span>
-        </label>
+        <h2 id="numeroPregunta">Pregunta</h2>
 
-        <label class="opcion">
-          <input type="radio" name="respuesta" value="B">
-          <span id="opcionB">Opción B</span>
-        </label>
+        <div class="pregunta-box">
+          <p id="textoPregunta">Aquí aparecerá la pregunta del test.</p>
+        </div>
 
-        <label class="opcion">
-          <input type="radio" name="respuesta" value="C">
-          <span id="opcionC">Opción C</span>
-        </label>
+        <form id="formOpciones" class="opciones">
+          <label class="opcion">
+            <input type="radio" name="respuesta" value="A">
+            <span id="opcionA">Opción A</span>
+          </label>
 
-        <label class="opcion">
-          <input type="radio" name="respuesta" value="D">
-          <span id="opcionD">Opción D</span>
-        </label>
-      </form>
+          <label class="opcion">
+            <input type="radio" name="respuesta" value="B">
+            <span id="opcionB">Opción B</span>
+          </label>
 
-    </div>
+          <label class="opcion">
+            <input type="radio" name="respuesta" value="C">
+            <span id="opcionC">Opción C</span>
+          </label>
 
-    <div class="footer">
-      <button onclick="siguientePregunta()">Siguiente</button>
-    </div>
+          <label class="opcion">
+            <input type="radio" name="respuesta" value="D">
+            <span id="opcionD">Opción D</span>
+          </label>
+        </form>
 
-  </div>
+      </div>
+
+      <div class="acciones">
+        <button onclick="siguientePregunta()">Siguiente</button>
+      </div>
+
+    </section>
+
+  </main>
 
   <script src="script.js"></script>
 </body>

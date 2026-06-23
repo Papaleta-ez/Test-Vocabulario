@@ -3,118 +3,219 @@
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
+  min-height: 100%;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: rgb(58, 110, 165);
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e8f7fa, #ffffff);
+  color: #1f2933;
 }
 
-.corpus {
-  max-width: 650px;
+.contenedor {
   min-height: 100vh;
-  background-color: white;
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }
 
-.header h1 {
+.tarjeta {
+  width: 100%;
+  max-width: 760px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  border-top: 8px solid #0097a9;
+}
+
+.encabezado {
+  text-align: center;
+  padding: 28px 25px 18px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo-uam {
+  width: 180px;
+  max-width: 80%;
+  margin-bottom: 12px;
+}
+
+.encabezado h1 {
   margin: 0;
-  padding: 18px;
-  font-size: 22px;
+  font-size: 26px;
+  color: #063b5c;
 }
 
-.header h2 {
-  margin: 0;
-  padding: 10px 18px;
-  background-color: black;
-  color: white;
-  font-size: 18px;
+.encabezado p {
+  margin: 6px 0 0;
+  color: #0097a9;
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.body {
-  flex: 1;
-  padding: 18px;
+.contenido {
+  padding: 28px;
 }
 
-.body h3 {
-  color: darkblue;
+.contenido h2 {
   margin-top: 0;
+  color: #063b5c;
+  font-size: 23px;
 }
 
-p {
+.contenido p {
+  line-height: 1.6;
   font-size: 16px;
-  line-height: 1.5;
 }
 
-form {
+.formulario {
   margin-top: 20px;
 }
 
 label {
   display: block;
-  margin-top: 12px;
-  margin-bottom: 5px;
+  margin-top: 14px;
+  margin-bottom: 6px;
   font-weight: bold;
+  color: #243b53;
 }
 
 input, select {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
+  border: 1px solid #b8c2cc;
+  border-radius: 10px;
   font-size: 15px;
-  border: 1px solid #999;
-  border-radius: 5px;
+  outline: none;
 }
 
-.footer {
-  background-color: black;
-  padding: 12px 18px;
+input:focus, select:focus {
+  border-color: #0097a9;
+  box-shadow: 0 0 0 3px rgba(0, 151, 169, 0.15);
+}
+
+.acciones {
+  padding: 18px 28px 28px;
+  text-align: right;
 }
 
 button {
-  background-color: white;
-  color: black;
+  background: #0097a9;
+  color: white;
   border: none;
-  padding: 10px 18px;
+  padding: 12px 24px;
   font-size: 15px;
+  border-radius: 999px;
   cursor: pointer;
-  border-radius: 5px;
   font-weight: bold;
+  transition: 0.2s;
 }
 
 button:hover {
-  background-color: #ddd;
+  background: #007d8c;
+  transform: translateY(-1px);
 }
 
-.questionimg {
-  display: block;
-  max-width: 100%;
-  margin: 15px auto;
-  border: 1px solid black;
+.panel-info {
+  background: #f0fbfd;
+  border-left: 5px solid #0097a9;
+  padding: 15px 18px;
+  border-radius: 12px;
+  margin-bottom: 22px;
 }
 
-.opcion {
-  display: block;
-  margin: 12px 0;
-  padding: 10px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.info-test {
-  background-color: #f1f1f1;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-left: 5px solid darkblue;
+.panel-info p {
+  margin: 7px 0;
+  font-size: 15px;
 }
 
 .temporizador {
-  font-size: 20px;
+  color: #c1121f;
   font-weight: bold;
-  color: darkred;
+  font-size: 18px;
+}
+
+.pregunta-box {
+  background: #f8fafc;
+  border: 1px solid #d9e2ec;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.pregunta-box p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.opciones {
+  display: grid;
+  gap: 12px;
+}
+
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  background: white;
+  border: 1px solid #d9e2ec;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.opcion:hover {
+  border-color: #0097a9;
+  background: #f0fbfd;
+}
+
+.opcion input {
+  width: auto;
+}
+
+.mensaje-final {
+  text-align: center;
+  padding: 45px 28px;
+}
+
+.mensaje-final h2 {
+  color: #0097a9;
+  font-size: 30px;
+}
+
+.final .acciones {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 12px;
+  }
+
+  .tarjeta {
+    border-radius: 12px;
+  }
+
+  .contenido {
+    padding: 20px;
+  }
+
+  .acciones {
+    padding: 15px 20px 22px;
+  }
+
+  .encabezado h1 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+  }
 }

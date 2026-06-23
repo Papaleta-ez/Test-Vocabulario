@@ -3,51 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test de Razonamiento</title>
+  <title>Test de Razonamiento - UAM</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="corpus">
+  <main class="contenedor">
 
-    <div class="header">
-      <h1>Test de Razonamiento</h1>
-      <h2>Instrucciones</h2>
-    </div>
+    <section class="tarjeta">
 
-    <div class="body">
-      <h3>Lea detenidamente antes de continuar</h3>
+      <div class="encabezado">
+        <img class="logo-uam" src="https://logosnicas.com/wp-content/uploads/2022/08/universidad_americana_2020.png" alt="Logo UAM">
+        <h1>Test de Razonamiento</h1>
+        <p>Universidad Americana</p>
+      </div>
 
-      <p>
-        En este test encontrará ejercicios de razonamiento.  
-        Debe seleccionar una sola respuesta correcta en cada pregunta.
-      </p>
+      <div class="contenido">
+        <h2>Instrucciones</h2>
 
-      <p>
-        Cuando esté listo, ingrese sus datos y presione el botón
-        <strong>Comenzar test</strong>.
-      </p>
+        <p>
+          Lea cuidadosamente cada pregunta antes de responder.  
+          Seleccione solamente una opción por pregunta.
+        </p>
 
-      <form>
-        <label for="nombres">Nombres</label>
-        <input type="text" id="nombres" placeholder="Ingrese sus nombres">
+        <p>
+          Una vez iniciado el test, deberá completarlo en el tiempo establecido.
+          El intento solo podrá realizarse una vez.
+        </p>
 
-        <label for="apellidos">Apellidos</label>
-        <input type="text" id="apellidos" placeholder="Ingrese sus apellidos">
+        <form class="formulario">
+          <label for="nombres">Nombres</label>
+          <input type="text" id="nombres" placeholder="Ingrese sus nombres">
 
-        <label for="tipoTest">Seleccione el test</label>
-        <select id="tipoTest">
-          <option value="A">Forma A - 10 minutos</option>
-          <option value="B">Forma B - 12 minutos</option>
-        </select>
-      </form>
-    </div>
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" placeholder="Ingrese sus apellidos">
 
-    <div class="footer">
-      <button onclick="comenzarTest()">Comenzar test</button>
-    </div>
+          <label for="tipoTest">Seleccione el test</label>
+          <select id="tipoTest">
+            <option value="A">Forma A - 10 minutos</option>
+            <option value="B">Forma B - 12 minutos</option>
+          </select>
+        </form>
+      </div>
 
-  </div>
+      <div class="acciones">
+        <button onclick="comenzarTest()">Comenzar test</button>
+      </div>
+
+    </section>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
