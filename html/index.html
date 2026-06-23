@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de Razonamiento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="corpus">
+
+    <div class="header">
+      <h1>Test de Razonamiento</h1>
+      <h2>Instrucciones</h2>
+    </div>
+
+    <div class="body">
+      <h3>Lea detenidamente antes de continuar</h3>
+
+      <p>
+        En este test encontrará ejercicios de razonamiento.  
+        Debe seleccionar una sola respuesta correcta en cada pregunta.
+      </p>
+
+      <p>
+        Cuando esté listo, ingrese sus datos y presione el botón
+        <strong>Comenzar test</strong>.
+      </p>
+
+      <form>
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombres" placeholder="Ingrese sus nombres">
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" placeholder="Ingrese sus apellidos">
+
+        <label for="tipoTest">Seleccione el test</label>
+        <select id="tipoTest">
+          <option value="A">Forma A - 10 minutos</option>
+          <option value="B">Forma B - 12 minutos</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="footer">
+      <button onclick="comenzarTest()">Comenzar test</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

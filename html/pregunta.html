@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pregunta - Test de Razonamiento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="corpus">
+
+    <div class="header">
+      <h1>Test de Razonamiento</h1>
+      <h2>Pregunta</h2>
+    </div>
+
+    <div class="body">
+
+      <div class="info-test">
+        <p><strong>Estudiante:</strong> <span id="nombreCompleto"></span></p>
+        <p><strong>Fecha:</strong> <span id="fechaTest"></span></p>
+        <p><strong>Hora de inicio:</strong> <span id="horaInicio"></span></p>
+        <p><strong>Tiempo restante:</strong> <span id="temporizador" class="temporizador">00:00</span></p>
+      </div>
+
+      <h3 id="numeroPregunta">Pregunta 1</h3>
+
+      <p id="textoPregunta">
+        Aquí aparecerá la pregunta del test.
+      </p>
+
+      <form id="formOpciones">
+        <label class="opcion">
+          <input type="radio" name="respuesta" value="A">
+          <span id="opcionA">Opción A</span>
+        </label>
+
+        <label class="opcion">
+          <input type="radio" name="respuesta" value="B">
+          <span id="opcionB">Opción B</span>
+        </label>
+
+        <label class="opcion">
+          <input type="radio" name="respuesta" value="C">
+          <span id="opcionC">Opción C</span>
+        </label>
+
+        <label class="opcion">
+          <input type="radio" name="respuesta" value="D">
+          <span id="opcionD">Opción D</span>
+        </label>
+      </form>
+
+    </div>
+
+    <div class="footer">
+      <button onclick="siguientePregunta()">Siguiente</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
